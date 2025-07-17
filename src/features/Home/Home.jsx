@@ -21,7 +21,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchPosts(selectedSubreddit));
-  }, [dispatch]);
+  }, [selectedSubreddit]);
 
   const onToggleComments = (index) => {
     const getComments = (permalink) => {
